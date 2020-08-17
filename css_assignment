@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+
+            display: flex;
+            margin-left:2px;
+            height: 100vh;
+            background:rgba(0, 0, 255, 0.479);
+            
+           
+        }
+    .box{
+       border: 1px solid cornflowerblue;
+       width: 250px;
+      
+       margin-top: 100px;
+       margin-left: 20px;
+       background-color: rgb(164, 196, 196);
+       align-self: flex-start;
+       border-radius: 5px;
+       padding: 10px;
+       line-height: 5px;
+    }
+    .box h4{
+        margin: 0;
+    }
+     .box1, .box2,.box3{
+         border: 1px solid black;
+         background-color: #fff;
+         margin: 1px;
+         padding: 2px;
+         border-radius: 5px;
+         
+    }
+    .text-box>textarea{
+         background-color: #fff;
+         margin: 5px;
+         padding: 3px;
+         border-radius: 5px;
+         width: 210px;
+         line-height: 30px;
+         font-size:1.2em;
+         text-align: start;
+    }
+    .box p{
+       cursor: pointer;
+       margin: 25px 0;
+      
+    }
+    .main-box{
+        margin-top: 15px;
+        padding: 10px;
+    }
+    .link{
+        border-radius: 5px;
+        padding: 5px;
+        text-decoration: none;
+        margin: auto;
+        color: #fff;
+        background: olive;
+    }
+    .link:hover{
+        background: rgb(1, 11, 68); 
+        cursor: pointer;
+    }
+    
+    nav>label{
+        position: absolute;
+        color: #fff;
+        font-style: italic;
+        font-size: x-large;
+        font-weight: 900;
+        margin-left: 700px;
+    }
+    nav>i{
+       position: absolute;
+       margin-left: 27px;
+       border: none;
+       background: rgba(67, 0, 224, 0.199);
+       padding: 2px;
+       
+    }
+    nav>i:hover{
+        background: rgb(1, 11, 68); 
+        cursor: pointer;
+    }
+    .fa-list,.list{
+        position: absolute;
+       margin-left: 40px;
+    }
+    nav>button{
+        position: absolute;
+        color: #fff;
+        margin-left: 60px;
+        cursor: pointer;
+        width: 150px;
+        background: rgba(67, 0, 224, 0.26);
+        line-height: 15px;
+        border: none;
+
+    }
+    nav>button:hover{
+        background: rgb(1, 11, 68);
+    }
+    nav>button>.fa-list{
+        margin-left:5px;
+        position: relative;
+    
+
+    }
+    nav>input{
+        border: none;
+        position: absolute;
+        margin-left: 220px;
+        line-height: 25px;
+        background: rgba(67, 0, 224, 0.281);
+
+    }
+    nav>input:hover{
+        background: #fff;
+    }
+    nav>.fa-plus{
+        position: absolute;
+        float: right;
+        margin-left: 1450px;
+    }
+    nav>.fa-user{
+        position: absolute;
+        float: right;
+        margin-left: 1500px;
+    }
+    .fa-pencil{
+        position: relative;
+        margin-left:120px;
+        opacity: 0;
+        margin-top: 0px;
+        
+        }
+    .hov:hover .fa-pencil{
+        opacity: 1;
+    }
+    .fa-close:hover{
+        color: #fff;
+        cursor: pointer;
+    }
+    section h3{
+        position: absolute;
+        color: #fff;
+        margin: 40px 20px;
+        background:  rgba(67, 0, 224, 0.281);
+    }
+    section a{
+         position: absolute;
+         color: #fff;
+         padding: 3px;
+         margin-top: 40px;
+         margin-left: 1450px;
+         background:  rgba(67, 0, 224, 0.281);
+         text-decoration: none;
+    }
+    section a:hover{
+        cursor: pointer;
+        background: rgb(1, 11, 68);
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <i class="fa fa-home" style="font-size: 24px; color:#fff"></i>
+        <button style="font-size: 24px;"><i class="fa fa-list"></i>&nbsp Board
+        </button>
+        <input type="text">
+        <label >Tralala</label>
+        <i class="fa fa-plus" style="font-size:24px; color: #fff;"></i>
+        <i class="fa fa-user" style="font-size:24px; color: #fff;"></i>
+        
+
+    </nav>
+ </br>
+
+
+
+    <!------------------------------------->
+    <section>
+        <h3>Frontend Training</h3>
+        <a href="#"><i class="fa fa-ellipsis-v"></i>&nbsp Show menu</a>
+        
+    </section>
+    
+    <!---------------TO DO------------->
+    <div class="box">
+        <h4>To Do</h4>
+        <div class="main-box">
+          <div class="box1 hov">
+              <p>Learn Html <i class="fa fa-pencil"></i></p>
+          </div>
+          <div class="box2 hov">
+             <p>Learn Css<i class="fa fa-pencil"></i></p>
+          </div>
+          <div class="box3 hov">
+             <p>Learn JavaScript<i class="fa fa-pencil"></i></p>
+          </div>
+          <p>+Add another card</p>
+        </div>
+<!-----------------Doing--------------->
+
+    </div>
+    <div class="box">
+        <h4>Doing</h4>
+        <div class="main-box">
+           <div class="box2">
+              <p>Prepare Resume</p>
+          </div>
+          <div class="text-box">
+             <textarea name="addcard" placeholder="Enter title for this card......"  cols="10" rows="2"></textarea>
+          </div>
+         
+          <a  class="link" href="#">Add Card</a>
+          <i class="fa fa-close" style="font-size: 24px; cursor: pointer;"></i>
+        </div>
+    </div>
+
+<!-------------------Testing/Verifying--------------->
+    <div class="box">
+        <h4>Testing/Verifying</h4>
+        <div class="main-box">
+          <div class="box2">
+                <p>Twitter app frontend</p>
+          </div>
+        </div>
+        
+        <p style="margin-left: 15px;">+Add another card</p>
+    </div>
+
+<!------------Deploying--------------->
+    <div class="box">
+    <h4>Deploying</h4>
+    <div class="main-box">
+      <div class="box2">
+            <p>Twitter app backend</p>
+      </div>
+    </div>
+    
+    <p style="margin-left: 15px;">+Add another card</p>
+    </div>
+
+<!--------------Done-------------->
+    <div class="box">
+          <h4>Done</h4>
+          <p>+Add card</p>
+    </div>
+
+
+    <!--------------another list-------->
+    <div class="box">
+        <h4>Done</h4>
+        <p>+Add another list</p>
+   </div>
+
+
+
+   <div class="box">
+    
+       
+      <div class="text-box">
+         <textarea name="addcard" placeholder="Enter title for this card......"  cols="10" rows="2"></textarea>
+      </div>
+     
+      <a  class="link" href="#">Add Card</a>
+      <i class="fa fa-close" style="font-size: 24px;cursor: pointer;"></i>
+    </div>
+</div>
+  
+    
